@@ -285,8 +285,8 @@ call s:Hi('CocFloatBorder', s:sumiInk4, s:sumiInk0, s:none)
 call s:Hi('CocFloatDividingLine', s:sumiInk4, s:sumiInk0, s:none)
 
 " Menu
-call s:Hi('CocMenuSel', s:sumiInk1, s:waveBlue2, s:none)
-call s:Hi('CocSelectedText', s:crystalBlue, '', s:none)
+call s:Hi('CocMenuSel', s:sumiInk1, s:lightBlue, s:none)
+call s:Hi('CocSelectedText', s:lightBlue, '', s:none)
 
 " Completion
 call s:Hi('CocPumMenu', s:fujiWhite, s:sumiInk0, s:none)

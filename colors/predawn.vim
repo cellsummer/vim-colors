@@ -60,7 +60,7 @@ endfunction
 
 " Editor UI
 call s:Hi('Normal', s:white, s:grey_5, s:none)
-call s:Hi('Cursor', s:grey_5, s:predawn, s:none)
+call s:Hi('Cursor', s:grey_5, s:yellow, s:none)
 call s:Hi('CursorLine', '', s:grey_7, s:none)
 call s:Hi('CursorLineNr', s:predawn, s:grey_7, s:none)
 call s:Hi('LineNr', s:grey_3, '', s:none)

@@ -1,0 +1,190 @@
+# Vim/Neovim temporary files
+*.swp
+*.swo
+*.swn
+*~
+.*.sw[a-z]
+*.un~
+Session.vim
+.netrwhist
+
+# Vim packpath
+pack/
+plugin/
+autoload/
+
+# Tags
+tags
+tags.lock
+tags.temp
+.tags
+.tags_sorted_by_file
+
+# OS-specific files
+# macOS
+.DS_Store
+.AppleDouble
+.LSOverride
+Icon
+._*
+.DocumentRevisions-V100
+.fseventsd
+.Spotlight-V100
+.TemporaryItems
+.Trashes
+.VolumeIcon.icns
+.com.apple.timemachine.donotpresent
+.AppleDB
+.AppleDesktop
+Network Trash Folder
+Temporary Items
+.apdisk
+
+# Windows
+Thumbs.db
+Thumbs.db:encryptable
+ehthumbs.db
+ehthumbs_vista.db
+*.stackdump
+[Dd]esktop.ini
+$RECYCLE.BIN/
+*.cab
+*.msi
+*.msix
+*.msm
+*.msp
+*.lnk
+
+# Linux
+.directory
+.Trash-*
+.nfs*
+
+# Editor and IDE files
+.vscode/
+.idea/
+*.sublime-project
+*.sublime-workspace
+.project
+.settings/
+.classpath
+.c9/
+*.launch
+.buildpath
+*.tmproj
+*.tmproject
+tmtags
+
+# Backup files
+*.bak
+*.backup
+*.old
+*.orig
+*_backup
+*_old
+
+# Log files
+*.log
+logs/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Node modules (if using any build tools)
+node_modules/
+npm-debug.log
+package-lock.json
+yarn.lock
+
+# Python (if using any Python scripts)
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+MANIFEST
+.pytest_cache/
+.coverage
+htmlcov/
+venv/
+env/
+ENV/
+
+# Documentation build artifacts
+_build/
+_static/
+_templates/
+.doctrees/
+docs/_build/
+site/
+
+# Compiled files
+*.exe
+*.out
+*.app
+*.i*86
+*.x86_64
+*.hex
+
+# Archives
+*.7z
+*.dmg
+*.gz
+*.iso
+*.jar
+*.rar
+*.tar
+*.zip
+
+# Test files and coverage
+coverage/
+.nyc_output/
+*.cover
+.hypothesis/
+
+# Temporary and cache files
+tmp/
+temp/
+.cache/
+*.tmp
+*.temp
+
+# Personal notes and TODO files (optional)
+TODO.local
+NOTES.local
+scratch/
+personal/
+
+# Generated screenshots (if any)
+screenshots/
+*.png.bak
+*.jpg.bak
+
+# Release artifacts
+releases/
+*.vsix
+*.tgz
+
+# Environment files
+.env
+.env.local
+.env.*.local
+
+# Git utilities
+*.patch
+*.diff
