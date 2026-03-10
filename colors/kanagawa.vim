@@ -111,10 +111,10 @@ call s:Hi('Underlined', s:crystalBlue, '', 'underline')
 call s:Hi('Ignore', s:sumiInk4, '', s:none)
 
 " Diff
-call s:Hi('DiffAdd', s:autumnGreen, s:winterGreen, s:none)
-call s:Hi('DiffChange', s:autumnYellow, s:winterYellow, s:none)
-call s:Hi('DiffDelete', s:autumnRed, s:winterRed, s:none)
-call s:Hi('DiffText', s:springBlue, s:winterBlue, s:none)
+call s:Hi('DiffAdd', s:autumnGreen, s:sumiInk2, s:none)
+call s:Hi('DiffChange', s:autumnYellow, s:sumiInk2, s:none)
+call s:Hi('DiffDelete', s:autumnRed, s:sumiInk2, s:none)
+call s:Hi('DiffText', s:springBlue, s:sumiInk3, s:none)
 
 " Spell
 call s:Hi('SpellBad', s:samuraiRed, '', 'undercurl')
