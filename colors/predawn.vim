@@ -44,7 +44,16 @@ let s:black      = '#151515'
 let s:none       = 'NONE'
 
 " Helper function to set highlights
+" Set g:predawn_disable_italic = 1 to disable all italic formatting
 function! s:Hi(group, fg, bg, attr)
+  let l:attr = a:attr
+  if get(g:, 'predawn_disable_italic', 0)
+    let l:attr = substitute(l:attr, ',\?italic,\?', '', 'g')
+    let l:attr = substitute(l:attr, '^,\|,$', '', 'g')
+    if l:attr == ''
+      let l:attr = 'NONE'
+    endif
+  endif
   let l:cmd = 'highlight ' . a:group
   if a:fg != ''
     let l:cmd .= ' guifg=' . a:fg
@@ -52,8 +61,8 @@ function! s:Hi(group, fg, bg, attr)
   if a:bg != ''
     let l:cmd .= ' guibg=' . a:bg
   endif
-  if a:attr != ''
-    let l:cmd .= ' gui=' . a:attr
+  if l:attr != ''
+    let l:cmd .= ' gui=' . l:attr
   endif
   execute l:cmd
 endfunction

@@ -66,8 +66,32 @@ For Neovim with Lua (`init.lua`):
 ```lua
 vim.opt.termguicolors = true
 vim.cmd('set background=dark')
-vim.cmd('colorscheme kanagawa')
+vim.cmd.colorscheme('kanagawa')
 ```
+
+### Options
+
+| Variable | Default | Description |
+|----------|---------|-------------|
+| `g:kanagawa_disable_italic` | `0` | Set to `1` to disable all italic formatting |
+
+### Disable Italics
+
+Some terminals or fonts render italics poorly. To disable all italic formatting:
+
+**Vim / `init.vim`:**
+```vim
+let g:kanagawa_disable_italic = 1
+colorscheme kanagawa
+```
+
+**Neovim (`init.lua`):**
+```lua
+vim.g.kanagawa_disable_italic = 1
+vim.cmd.colorscheme('kanagawa')
+```
+
+> The variable must be set **before** loading the colorscheme.
 
 ## Features
 

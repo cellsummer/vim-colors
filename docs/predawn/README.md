@@ -93,6 +93,30 @@ use 'cellsummer/vim-colorschemes'
 
 ## Configuration
 
+### Options
+
+| Variable | Default | Description |
+|----------|---------|-------------|
+| `g:predawn_disable_italic` | `0` | Set to `1` to disable all italic formatting |
+
+### Disable Italics
+
+Some terminals or fonts render italics poorly. To disable all italic formatting:
+
+**Vim / `init.vim`:**
+```vim
+let g:predawn_disable_italic = 1
+colorscheme predawn
+```
+
+**Neovim (`init.lua`):**
+```lua
+vim.g.predawn_disable_italic = 1
+vim.cmd.colorscheme('predawn')
+```
+
+> The variable must be set **before** loading the colorscheme.
+
 ### Basic Setup (Vim)
 
 Add to your `~/.vimrc`:
@@ -408,6 +432,8 @@ For best experience, use a terminal with 24-bit color support:
 1. Verify font supports italics
 2. Check terminal italic support
 3. Test with: `:highlight Comment` (should show `gui=italic`)
+
+To disable italics entirely, set `g:predawn_disable_italic = 1` before loading the colorscheme.
 
 ### Functions/classes not showing in pale yellow
 
